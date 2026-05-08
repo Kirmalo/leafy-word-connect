@@ -4,15 +4,19 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Android / Gradle
+# Android build artifacts (root-level from old Gradle invocations)
 .gradle/
 build/
+
+# Android project — track source, ignore build artifacts and secrets
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
 *.keystore
-local.properties
 *.jks
 
-# Capacitor
-android/
+# iOS (not targeted)
 ios/
 
 # IDE
